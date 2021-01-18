@@ -17,6 +17,7 @@ async function elementConnected(element) {
 			const menuResult = await(await fetch(`${APP_CONSTANTS.API_NAV_MENU_LISTING}?q=${level}&lang=${lang}`)).json();
 			if (menuResult.result) level1 = menuResult.menu.level1;
 		}
+		for (const baseMenu of level1) if (baseMenu.level2 && baseMenu.level2[0]) baseMenu.level2[0].selected = true;	// select first item by default
 	} catch (err) {}
 
 	const data = { logo: element.getAttribute("logo"), level1 }
