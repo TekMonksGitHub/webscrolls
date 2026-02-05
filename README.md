@@ -1,3 +1,5 @@
+# THIS PROJECT IS NOW ARCHIVED. NEW DEVELOPMENT WILL BE UNDER THE webscrolls2 REPOSITORY.
+
 # WebScrolls
 Website framework. WordPress replacement or WordPress for the 21st century!
 
